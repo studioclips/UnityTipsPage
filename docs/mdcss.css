@@ -1,0 +1,25 @@
+/* テーブル */
+.text table {
+    width: auto;
+    border: 1px solid #555555;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th {
+    color: #333;
+    padding: 5px;
+    border-bottom: 1px solid #555555;
+    border-left: 1px solid #555555;
+    background: #a7bece;
+    font-weight: bold;
+    line-height: 120%;
+    text-align: center;
+}
+td {
+    padding: 5px;
+    border-bottom: 1px solid #555555;
+    border-left: 1px solid #555555;
+}
+tr:nth-child(2n + 1) {
+    background: #b5c6eb;
+}

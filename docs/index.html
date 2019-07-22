@@ -425,11 +425,11 @@ blockquote {
 </tr>
 <tr>
 <td>7.</td>
-<td>「Create」→「ExcelAssetScript」を選択します。保存先フォルダを選択して保存します（管理ファイル・このファイルを修正します[^1]）。</td>
+<td>「Create」→「ExcelAssetScript」を選択します。保存先フォルダを選択して保存します（管理ファイル・このファイルを修正します<a href="#label1">[^1]</a></>）。</td>
 </tr>
 <tr>
 <td>8.</td>
-<td>ScriptableObject で管理するデータを保存するデータを記入するファイルを用意する（データリストテーブル[^3]）。</td>
+<td>ScriptableObject で管理するデータを保存するデータを記入するファイルを用意する（データリストテーブル<a href="#label3">[^3]</a>）。</td>
 </tr>
 <tr>
 <td>9.</td>
@@ -445,7 +445,7 @@ blockquote {
 </tr>
 <tr>
 <td>12.</td>
-<td>呼び出しは次の通り。[^2]<br>ScriptableObjectファイル名 変数;<br>変数.エクセルシート名[選択番号].メンバー</td>
+<td>呼び出しは次の通り。<a href="#label2">[^2]</a><br>ScriptableObjectファイル名 変数;<br>変数.エクセルシート名[選択番号].メンバー</td>
 </tr>
 </tbody>
 </table>
@@ -453,7 +453,7 @@ blockquote {
 <h2 id="%E4%BE%8B%EF%BC%89excel-%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%90%8D%E3%81%8C-samplexlsx-%E3%81%AE%E5%A0%B4%E5%90%88br">例）excel ファイル名が sample.xlsx の場合<br></h2>
 <p>シート名は sampleEntitis;<br>
 データは id(int), name(string)とします。</p>
-<p>[^3]<details><summary>定義ファイル</summary></p>
+<p id="label3"><details><summary>定義ファイル</summary></p>
 <div>
 <pre class="hljs"><code><div>[SampleEntity.cs（定義ファイル）]
 
@@ -468,7 +468,7 @@ public class SampleEntity
 </div></code></pre>
 </div>
 </details>
-<p>[^1]<details><summary>管理ファイル</summary></p>
+<p id="label1"><details><summary>管理ファイル</summary></p>
 <div>
 <pre class="hljs"><code><div>[sample.cs(生成されるファイル)]
 
@@ -484,7 +484,7 @@ public class sample : ScriptableObject
 </div></code></pre>
 </div>
 </details>
-<p>[^2]<details><summary>呼び出し方法</summary></p>
+<p id="label2"><details><summary>呼び出し方法</summary></p>
 <div>
 <pre class="hljs"><code><div>[gameControlなどの呼び出すファイル]
 
